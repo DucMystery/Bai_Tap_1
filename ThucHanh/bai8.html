@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+  <button type="button" onclick="result()">Play</button>
+<script>
+    let number1 =parseInt(prompt("Mời nhập vào giới hạn dưới:"));
+    let number2 =parseInt(prompt("Mời nhập vào giới hạn trên :"));
+    let t;
+    function result() {
+        let number =parseInt(prompt("Mời bạn nhập vào số đoán:"));
+            t=Math.floor((Math.random()*number1)+(Math.random()*number2));
+            document.write(t);
+            if (t===number){
+                document.write("Đúng rồi!");
+            }else {
+                document.write("Sai rồi!");
+            }
+    }
+</script>
+</body>
+</html>
